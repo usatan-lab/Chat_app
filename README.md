@@ -1,6 +1,5 @@
-langchain-streamlit-app
-このリポジトリは、Streamlit + LangChain + OpenAI（ChatOpenAI）を使って簡単なチャットアプリを作るサンプルだよ。
-ChatGPT API の一部機能を活用して、ユーザーの入力を受け取り、会話形式でレスポンスを返す仕組みになってるよ。
+Streamlit + LangChain + OpenAI（ChatOpenAI）を使って簡単なチャットアプリです。
+ChatGPT API の一部機能を活用して、ユーザーの入力を受け取り、会話形式でレスポンスを返します。
 
 1. 概要
 Streamlit を使って手軽にウェブアプリのUIを構築
@@ -8,7 +7,7 @@ LangChain と OpenAI API の連携でチャット機能を実装
 環境変数から モデル名 や temperature を取得して柔軟に設定可能
 2. 必要な環境とインストール
 必要なもの
-Python 3.8 以上（3.10あたりが無難かも）
+Python 3.8 以上（3.10あたりが無難）
 pip などのパッケージマネージャー
 OpenAIのAPIキー（OpenAI公式サイトで取得可能）
 .env ファイルで環境変数を設定
@@ -23,11 +22,11 @@ cd langchain-streamlit-app
 pip install -r requirements.txt
 
 3. 環境変数の設定
-リポジトリのルートに .env ファイルを用意して、以下の変数を設定してね。
+リポジトリのルートに .env ファイルを用意して、以下の変数を設定。
 
 txt
 
-OPENAI_API_KEY=sk-xxxxxxx       # あなたのOpenAI APIキー
+OPENAI_API_KEY=sk-xxxxxxx       # OpenAI APIキー
 OPENAI_API_MODEL=gpt-3.5-turbo  # 好みのモデル
 OPENAI_API_TEMPERATURE=0.7      # 好みの温度パラメータ
 OPENAI_API_KEY: OpenAIのAPIキー
@@ -38,5 +37,5 @@ OPENAI_API_TEMPERATURE: モデルの出力の創造性を調節する値（0～1
 
 bash
 streamlit run app.py
-ブラウザが自動的に立ち上がり、localhost:8501 などでアプリが表示されるよ。
-テキストボックスに入力して「Enter」すると、アシスタントが返信してくれるよ。
+Slackアプリを新規作成しインストール先を指定。アプリと接続します。
+テキストボックスに入力して「Enter」すると、アシスタントが返信してくれます。
